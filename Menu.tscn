@@ -1,0 +1,87 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkomqegjwyee2"]
+
+[ext_resource type="Script" uid="uid://ddfltxke0qkjv" path="res://Levels/menu.gd" id="1_bdpv0"]
+[ext_resource type="FontFile" uid="uid://dgqob506aggxw" path="res://Fonts/berylium/Berylium Bd.otf" id="2_8t5nu"]
+[ext_resource type="FontFile" uid="uid://c2a4wavloboq0" path="res://Fonts/berylium/Berylium Rg.otf" id="3_6a0hj"]
+[ext_resource type="Texture2D" uid="uid://cixlq28wwtmun" path="res://Enemy.png" id="4_vuwk1"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bdpv0")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 6
+texture_repeat = 2
+layout_direction = 2
+layout_mode = 0
+offset_left = 427.0
+offset_top = 112.0
+offset_right = 724.0
+offset_bottom = 191.0
+mouse_filter = 1
+mouse_behavior_recursive = 2
+mouse_default_cursor_shape = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_8t5nu")
+theme_override_font_sizes/font_size = 65
+text = "Necro Loop"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.5
+offset_top = -60.5
+offset_right = 45.5
+offset_bottom = 60.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Iniciar" type="Button" parent="Buttons"]
+clip_contents = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_6a0hj")
+theme_override_font_sizes/font_size = 20
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+text = "Iniciar"
+icon = ExtResource("4_vuwk1")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Creditos" type="Button" parent="Buttons"]
+clip_contents = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_6a0hj")
+theme_override_font_sizes/font_size = 20
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+text = "Creditos"
+icon = ExtResource("4_vuwk1")
+icon_alignment = 1
+
+[node name="Sair" type="Button" parent="Buttons"]
+clip_contents = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_6a0hj")
+theme_override_font_sizes/font_size = 20
+toggle_mode = true
+button_mask = 7
+text = "Sair"
+icon = ExtResource("4_vuwk1")
+icon_alignment = 1
+expand_icon = true
+text_direction = 3
